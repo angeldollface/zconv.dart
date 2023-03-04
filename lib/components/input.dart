@@ -20,6 +20,7 @@ class NumberInput extends StatelessWidget {
     final double radius;
     final String fontFamily;
     final double padding;
+    final VoidCallback inputCallback;
 
     /// Class constructor with
     /// parameters.
@@ -32,7 +33,8 @@ class NumberInput extends StatelessWidget {
             required this.borderSize,
             required this.radius,
             required this.fontFamily,
-            required this.padding
+            required this.padding,
+            required this.inputCallback
         }
     );
 
@@ -48,6 +50,7 @@ class NumberInput extends StatelessWidget {
                 color: this.backgroundColor,
                 fontFamily: this.fontFamily
             ),
+            onEditingComplete: this.inputCallback,
             decoration: new InputDecoration(
                 contentPadding: EdgeInsets.all(this.padding),
                 border: OutlineInputBorder(

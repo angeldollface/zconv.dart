@@ -135,7 +135,21 @@ class HomeState extends State<Home> {
                                                     color: mainColor,
                                                     fontSize: stdFontSize,
                                                     fontFamily: contentFont,
-                                                    borderSize: stdBorderSize
+                                                    borderSize: stdBorderSize,
+                                                    inputCallback: () {
+                                                        setState(
+                                                            (){
+
+                                                                /// Changing the state of the user's input
+                                                                /// by capturing it.
+                                                                start = controller.text;
+
+                                                                /// Processing the input and converting
+                                                                /// it.
+                                                                result = processInput(mode, start);
+                                                            }
+                                                        );
+                                                    }
                                                 )
                                             )
                                         ),
