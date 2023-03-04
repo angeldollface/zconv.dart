@@ -1,0 +1,21 @@
+name: zconv
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+description: "My graphical implementation in Flutter of a number conversion app."
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  harpo:
+    git: https://github.com/angeldollface/harpo
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: DotMatrix
+      fonts:
+        - asset: assets/fonts/DotMatrix.ttf
+    - family: Axeon
+      fonts:
+        - asset: assets/fonts/Axeon.ttf

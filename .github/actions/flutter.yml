@@ -1,0 +1,19 @@
+name: Dart
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - name: "Fetch dependencies."
+        run: flutter pub get
+      - name: "Make a build for the \"web\" target."
+        run: "flutter build web --release"
+        
