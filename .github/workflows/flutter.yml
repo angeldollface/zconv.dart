@@ -16,4 +16,9 @@ jobs:
         run: flutter pub get
       - name: "Make a build for the \"web\" target."
         run: "flutter build web --release"
+      - name: "Deploy"
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: build/web
         
