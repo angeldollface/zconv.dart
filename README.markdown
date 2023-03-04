@@ -16,6 +16,9 @@ Since I implemented my algorithms to convert between different number bases, I t
 - Library implementation in Rust: [VIEW](https://github.com/angeldollface/chico)
 - Web app implementation in Vue.js: [VIEW](https://github.com/angeldollface/zconv)
 
+## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
+
+You can view the live, deployed project on GitHub Pages [here](https://angeldollface.art/zconv.dart).
 
 ## INSTALLATION :inbox_tray:
 
@@ -61,6 +64,7 @@ flutter build web --release
 
 - Initial release
 - Upload to GitHub
+- Deployment on GitHub Pages
 
 ## NOTE :scroll:
 
