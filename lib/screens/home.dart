@@ -4,7 +4,7 @@ Licensed under the MIT license.
 */
 
 /// Importing a file with 
-/// layout variables so that
+/// layout variables so that I
 /// have more maintainable code.
 import '../vars.dart';
 

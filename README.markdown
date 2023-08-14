@@ -6,7 +6,7 @@
 
 ## ABOUT :books:
 
-Since I implemented my algorithms to convert between different number bases in different languages, I thought, to showcase my Flutter skills, I'd give my Dart implementation a shiny frontend. This repository contains the source code to that shiny frontend.
+Since I implemented my algorithms to convert between different number bases in different languages, I thought, to showcase my Flutter skills, I'd give my Dart implementation a shiny frontend. This repository contains the source code for that shiny frontend.
 
 ## LINKS :earth_americas:
 

@@ -6,7 +6,7 @@ Licensed under the MIT license.
 /// Importing Flutter's API.
 import 'package:flutter/material.dart';
 
-/// A class for a re-usable text widget.
+/// A class for a re-usable spacer widget.
 /// "DRY" is important.
 class VerticalSpacer extends StatelessWidget {
 

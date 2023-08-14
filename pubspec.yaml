@@ -14,7 +14,7 @@ flutter:
   fonts:
     - family: DotMatrix
       fonts:
-        - asset: assets/fonts/DotMatrix.ttf
+        - asset: assets/fonts/Ostrich.ttf
     - family: Axeon
       fonts:
         - asset: assets/fonts/Axeon.ttf
