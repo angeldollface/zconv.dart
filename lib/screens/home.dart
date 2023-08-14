@@ -16,10 +16,6 @@ import '../utils/utils.dart';
 /// to give useful feedback to the user.
 import '../components/text.dart';
 
-/// Importing our custom input field
-/// to get input from the user.
-import '../components/input.dart';
-
 /// Importing our custom button to do
 /// some useful conversions!
 import '../components/button.dart';
@@ -127,16 +123,49 @@ class HomeState extends State<Home> {
                                             ),
                                             child: new Container(
                                                 width: double.infinity,
-                                                child: new NumberInput(
-                                                    padding: stdPadding,
-                                                    radius: stdFontSize,
+                                                child: new TextField(
+                                                    autofocus: true,
+                                                    autocorrect: false,
                                                     controller: controller,
-                                                    backgroundColor: accentColor,
-                                                    color: mainColor,
-                                                    fontSize: stdFontSize,
-                                                    fontFamily: contentFont,
-                                                    borderSize: stdBorderSize,
-                                                    inputCallback: () {
+                                                    style: new TextStyle(
+                                                        fontSize: stdFontSize,
+                                                        color: accentColor,
+                                                        fontFamily: contentFont
+                                                    ),
+                                                    decoration: new InputDecoration(
+                                                        contentPadding: EdgeInsets.all(stdPadding),
+                                                        border: OutlineInputBorder(
+                                                            borderRadius: new BorderRadius.all(
+                                                                new Radius.circular(
+                                                                    15
+                                                                )
+                                                            )
+                                                        ),
+                                                        enabledBorder: OutlineInputBorder(
+                                                            borderRadius: new BorderRadius.all(
+                                                                new Radius.circular(
+                                                                    15
+                                                                )
+                                                            ),
+                                                            borderSide: BorderSide(
+                                                                width: stdBorderSize, 
+                                                                color: accentColor
+                                                            )
+                                                        ),
+                                                        focusedBorder: OutlineInputBorder(
+                                                            borderRadius: new BorderRadius.all(
+                                                                new Radius.circular(
+                                                                    15
+                                                                )
+                                                            ),
+                                                            borderSide: BorderSide(
+                                                                width: stdBorderSize, 
+                                                                color: accentColor
+                                                            )
+                                                        ),
+                                                    ),
+
+                                                    onEditingComplete: () {
                                                         setState(
                                                             (){
 

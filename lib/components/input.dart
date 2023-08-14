@@ -6,9 +6,16 @@ Licensed under the MIT license.
 /// Importing Flutter's API.
 import 'package:flutter/material.dart';
 
+class NumberInput extends StatefulWidget {
+    /// Setting up the state handler.
+    NumberInputState createState(){
+        return NumberInputState();
+    }
+}
+
 /// A class for a re-usable input field.
 /// "DRY" is important.
-class NumberInput extends StatelessWidget {
+class NumberInputState extends State<Number> {
 
     /// The parameters this custom
     /// widget will accept.
@@ -43,46 +50,6 @@ class NumberInput extends StatelessWidget {
     /// widget tree.
     @override
     Widget build(BuildContext context) {
-        return TextField(
-            controller: this.controller,
-            style: new TextStyle(
-                fontSize: this.fontSize,
-                color: this.backgroundColor,
-                fontFamily: this.fontFamily
-            ),
-            onEditingComplete: this.inputCallback,
-            decoration: new InputDecoration(
-                contentPadding: EdgeInsets.all(this.padding),
-                border: OutlineInputBorder(
-                    borderRadius: new BorderRadius.all(
-                        new Radius.circular(
-                            this.radius
-                        )
-                    )
-                ),
-                enabledBorder: OutlineInputBorder(
-                    borderRadius: new BorderRadius.all(
-                        new Radius.circular(
-                            this.radius
-                        )
-                    ),
-                    borderSide: BorderSide(
-                        width: this.borderSize, 
-                        color: this.backgroundColor
-                    )
-                ),
-                focusedBorder: OutlineInputBorder(
-                    borderRadius: new BorderRadius.all(
-                        new Radius.circular(
-                            this.radius
-                        )
-                    ),
-                    borderSide: BorderSide(
-                        width: this.borderSize, 
-                        color: this.backgroundColor
-                    )
-                ),
-            )
-        );
+        
     }
 }
