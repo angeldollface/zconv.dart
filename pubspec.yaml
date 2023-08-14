@@ -12,9 +12,9 @@ dependencies:
 flutter:
   uses-material-design: true
   fonts:
-    - family: DotMatrix
+    - family: MC
       fonts:
-        - asset: assets/fonts/Ostrich.ttf
+        - asset: assets/fonts/MC.ttf
     - family: Axeon
       fonts:
         - asset: assets/fonts/Axeon.ttf

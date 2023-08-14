@@ -24,5 +24,5 @@ const double nullPadding = 0;
 const String appName = 'ZCONV';
 const String process = 'PROCESS';
 const String headingFont = 'Axeon';
-const String contentFont = 'Ostrich';
+const String contentFont = 'MC';
 const String modeSwitch = 'SWITCH MODE';
