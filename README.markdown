@@ -18,7 +18,7 @@ Since I implemented my algorithms to convert between different number bases in d
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
-You can view the live, deployed project on GitHub Pages [here](https://angeldollface.art/zconv.dart).
+You can view the live, deployed project on GitHub Pages [here](https://angeldollface.boo/zconv.dart).
 
 ## INSTALLATION :inbox_tray:
 
