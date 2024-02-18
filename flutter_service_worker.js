@@ -3,32 +3,36 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"index.html": "7013819d92fec2a1b21cb3c0caf387ba",
-"/": "7013819d92fec2a1b21cb3c0caf387ba",
-"flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
+const RESOURCES = {"version.json": "39062203048d8980c0bf95d2daf4e5ee",
 "manifest.json": "269547d328bde06e75b3a003f30514bb",
-"assets/fonts/MaterialIcons-Regular.otf": "62ec8220af1fb03e1c20cfa38781e17e",
-"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"canvaskit/canvaskit.wasm": "3d2a2d663e8c5111ac61a46367f751ac",
+"canvaskit/skwasm.js": "445e9e400085faead4493be2224d95aa",
+"canvaskit/skwasm.wasm": "e42815763c5d05bba43f9d0337fa7d84",
+"canvaskit/skwasm.js.symbols": "741d50ffba71f89345996b0aa8426af8",
+"canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
+"canvaskit/canvaskit.js.symbols": "38cba9233b92472a36ff011dc21c2c9f",
+"canvaskit/chromium/canvaskit.wasm": "f5934e694f12929ed56a671617acd254",
+"canvaskit/chromium/canvaskit.js.symbols": "4525682ef039faeb11f24f37436dca06",
+"canvaskit/chromium/canvaskit.js": "43787ac5098c648979c27c13c6f804c3",
+"canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
+"index.html": "18b918f4d30ef266aad7dedc6778b36e",
+"/": "18b918f4d30ef266aad7dedc6778b36e",
+"flutter.js": "c71a09214cb6f5f8996a531350400a9a",
+"main.dart.js": "209e16bb61dae5d0ee6d1fe0623e8738",
 "assets/AssetManifest.bin": "f03ff1074f2daed71e9d5813713860c4",
-"assets/assets/fonts/MC.ttf": "b4a0de46477157860a916a4b56269640",
-"assets/assets/fonts/Axeon.ttf": "9a36988ec2cd14e9995f3c6f991f8833",
+"assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.json": "a121646abdea8d6491dcba1be901b197",
-"assets/NOTICES": "bec9b0a7cff2d1ea0f26b99d7d2427d4",
 "assets/FontManifest.json": "1a483dc4fbdb0595916c8223605fe6dd",
-"version.json": "39062203048d8980c0bf95d2daf4e5ee",
-"main.dart.js": "e19d492ec77ae5558d6895afe464ddda",
-"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
-"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
-"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
-"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a",
-"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
-"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
-"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea"};
+"assets/fonts/MaterialIcons-Regular.otf": "0db35ae7a415370b89e807027510caf0",
+"assets/AssetManifest.bin.json": "67656afa0cdce479a9a334f5d546765d",
+"assets/NOTICES": "7fb3abc2b4b66c3c80c6e77e12cef891",
+"assets/assets/fonts/MC.ttf": "b4a0de46477157860a916a4b56269640",
+"assets/assets/fonts/Axeon.ttf": "9a36988ec2cd14e9995f3c6f991f8833"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
 "index.html",
-"assets/AssetManifest.json",
+"assets/AssetManifest.bin.json",
 "assets/FontManifest.json"];
 
 // During install, the TEMP cache is populated with the application shell files.
